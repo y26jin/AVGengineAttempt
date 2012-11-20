@@ -27,15 +27,37 @@ var GameEngine = function(){
 		// will update
 		};
 	
+	function loadfile(requestURL){
+		var file = (function(){
+			var jsonValue = null;
+			$.ajax({
+				async: false,
+				url: requestURL,
+				dataType: "json",
+				success: function(data){
+					jsonValue = data;
+				},
+				error: function(response, errorThrow){
+					alert(errorThrow);
+				}
+			});
+			return jsonValue;
+		})();
+		
+		if(!file) alert('error!');
+		
+		return file;
+	}
+	
 	this.GamePlay = function(){
-		var param = '<li>onLoad</li>';
-		gameEvent.onLoad(param);
+		var file = loadfile("./scripts/test2.json");
+		gameEvent.onLoad(file);
 	};
 	
 	// 	
 	function doLoad(param){
 		$('.stage').fadeIn('slow');
-		$('.stage').append('<li>lmao</li>');
+		$('.stage').append(param);
 	}
 	
 	function doTransit(param){
