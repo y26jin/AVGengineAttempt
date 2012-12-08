@@ -1,22 +1,39 @@
 {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
-                }
-            }
-        }
-    }
+    "title": "suzumiya",
+	"settings": "None",
+	"charaters": ["Haruhi", "Mikuru", "Nagato"],
+	"story": [
+		{
+		"words": "AAA",
+		"motion": "gamestart"
+		},
+		{
+		"words": "BBB",
+		"motion": "transit"
+		},
+		{
+		"words": "CCC",
+		"motion": "transit"
+		},
+		{
+		"words": "DDD",
+		"motion": "transit"
+		},
+		{
+		"words": "EEE",
+		"motion": "transit"
+		},
+		{
+		"words": "FFF",
+		"motion": "transit"
+		},
+		{
+		"words": "GGG",
+		"motion": "transit"
+		},
+		{
+		"words": "HHH",
+		"motion": "gameend"
+		}
+	]
 }
